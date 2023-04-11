@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="formulario de registro " />
+	<meta name="keywords" content="Html,CSS" />
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<title>Contáctanos</title>
+
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Grupo1</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				   <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+				<a class="nav-link" href="#">Pedidos</a>
+				<a class="nav-link" href="#">Seguimiento</a>
+				<a class="nav-link" href="estadisticas.html">Estadísticas</a>
+				<a class="nav-link active" href="contacto.html">Contáctanos</a>
+			</div>
+		</div>
+	</div>
+</nav>
+
+	<div class="container-fluid">
+		<div class="container">
+			<h1>Contáctanos</h1>
+			<form id="formulario" action="index.html">
+				<!-- Usuario del form -->
+				<div class="mb-3">
+					<label for="nombre" class="form-label">Usuario</label>
+					<input type="text" class="form-control" id="nombre" placeholder="Introduzca su usuario">
+				</div>
+				<!-- Fin usuario -->
+
+				<!-- Correo form -->
+				<div class="mb-3">
+					<label for="correo" class="form-label">Correo</label>
+					<input type="email" class="form-control" id="correo" placeholder="correo@dominio.com">
+				</div>
+				<!-- Fin de correo form -->
+
+				<!-- Inicio de text-area -->
+				<div class="mb-3">
+					<label for="texto" class="form-label">Hablanos de ti</label>
+					<textarea class="form-control" id="texto" rows="3"></textarea>
+				</div>
+				<!-- Fin de text-area -->
+
+				<!-- BOTÓN -->
+				<input type="submit" value="submit" name="enviar">
+			</form>
+		</div>
+	</div>
+
+	<!-- Botón para volver al inicio-->
+	<br> <a class="btn btn-outline-danger position-absolute end-50" href="index.html">Volver al inicio</a>
+
+
+	<script src="assets/js/funciones.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+		crossorigin="anonymous"></script>
+</body>
+
+
+</html>
