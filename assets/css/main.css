@@ -2,33 +2,67 @@
 #navbarNavAltMarkup{
     background-color: #90acb4 !important;
 
-}
-.container{
-    width: 50%;
-}
+  .container {
+      width: 50%;
+  }
 
-h2{
-   text-align: center; 
-}
-.lead{
-    text-align: center;
-}
+  h2 {
+      text-align: center;
+  }
+
+  .lead {
+      text-align: center;
+  }
 
 
-.container-imgs{
-    max-width: 50%;
-    height: auto;
-    margin: 0 auto;
-}
+  .container-imgs {
+      max-width: 50%;
+      height: auto;
+      margin: 0 auto;
+  }
 
-@media screen and (max-width: 768) {
 
-    .parrafo-somos{
-max-width: 100%;
-}
 
-    .contenido{
-        max-width: 100%;
-    }  
-    
-}
+  @media screen and (max-width: 768) {
+
+      .parrafo-somos {
+          max-width: 100%;
+      }
+
+      .contenido {
+          max-width: 100%;
+      }
+
+  }
+
+/* responsividad de la tabla cuando se despliega desde el navbar */
+  @media screen and (max-width: 515px) {
+      table {
+          width: 30%;
+      }
+
+      thead {
+          display: none;
+      }
+
+      tr:nth-of-type(2n) {
+          background-color: inherit;
+      }
+
+      tr td:first-child {
+          background: #f0f0f0;
+          font-weight: bold;
+          font-size: 1.3em;
+      }
+
+      tbody td {
+          display: block;
+          text-align: center;
+      }
+
+      tbody td:before {
+          content: attr(data-th);
+          display: block;
+          text-align: center;
+      }
+  }
