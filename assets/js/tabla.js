@@ -113,7 +113,7 @@ var data = [
 ]
 
 $(document).ready(function () {
-   $('#insertInfo').DataTable({
+ /*  $('#insertInfo').DataTable({
       responsive: {
          breakpoints: [
             { name: 'bigdesktop', width: Infinity },
@@ -140,4 +140,20 @@ $(document).ready(function () {
          { data: 'medida' }
       ]
    });
+});*/
+
+// datatable ejemplo profe
+
+$('#insertInfo').DataTable(
+   {
+   "lenguage": {
+      "url": "//cdn.datatables.net/plug-ins/1.10.25/i18n/Spanish.json"
+   },
+   dom:'Bfrtip',
+   bFilter: true,
+   buttons: [
+      'copy', 'csv', 'excel', 'pdf', 'print'
+   ]
+}
+);
 });
