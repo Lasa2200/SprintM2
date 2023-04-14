@@ -1,12 +1,10 @@
   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,700&display=swap');
-/*#navbarNavAltMarkup{
-    background-color: #90acb4 !important;*/
 
   .container {
       width: 50%;
   }
 
-  h2 {
+  h3 {
       text-align: center;
   }
 
@@ -66,3 +64,8 @@
           text-align: center;
       }
   }
+ .card-text{
+
+    color:#a77f55;
+    font-weight: bold;
+ }
