@@ -1,71 +1,86 @@
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,700&display=swap');
 
-  .container {
-      width: 50%;
-  }
+.container {
+    width: 50%; 
+}
 
-  h3 {
-      text-align: center;
-  }
+h3 {
+    text-align: center;
+}
 
-  .lead {
-      text-align: center;
-  }
+.lead {
+    text-align: center;
+}
 
+h2{
+    color: #b46c3c;
+}
+.form-label{
+    color: #044c74;
+    font-weight: bold;
+}
 
-  .container-imgs {
-      max-width: 50%;
-      height: auto;
-      margin: 0 auto;
-  }
+input:hover{
+    background-color:#a77f55;
+    color: #044c74;
+    border-color: #a77f55;
+    border-radius: 5px;
+}
+.container-imgs {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
 
+h4:hover {
+    color: #a77f55;
+}
 
+@media screen and (max-width: 768) {
+.parrafo-somos {
+    max-width: 100%;
+}
 
-  @media screen and (max-width: 768) {
+.contenido {
+    max-width: 100%;
+}
 
-      .parrafo-somos {
-          max-width: 100%;
-      }
-
-      .contenido {
-          max-width: 100%;
-      }
-
-  }
+}
 
 /* responsividad de la tabla cuando se despliega desde el navbar */
-  @media screen and (max-width: 515px) {
-      table {
-          width: 30%;
-      }
+@media screen and (max-width: 515px) {
+table {
+        width: 30%;
+    }
 
-      thead {
-          display: none;
-      }
+thead {
+        display: none;
+    }
 
-      tr:nth-of-type(2n) {
-          background-color: inherit;
-      }
+tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
 
-      tr td:first-child {
-          background: #f0f0f0;
-          font-weight: bold;
-          font-size: 1.3em;
-      }
+tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
 
-      tbody td {
-          display: block;
-          text-align: center;
-      }
+tbody td {
+        display: block;
+        text-align: center;
+    }
 
-      tbody td:before {
-          content: attr(data-th);
-          display: block;
-          text-align: center;
-      }
-  }
- .card-text{
+tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+    }
+}
+
+.card-text{
 
     color:#a77f55;
     font-weight: bold;
- }
+}

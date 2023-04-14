@@ -8,14 +8,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="formulario de registro " />
-	<meta name="keywords" content="Html,CSS"/>
+	<meta name="keywords" content="Html,CSS" />
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<title>Contáctanos</title>
 
 <body>
+	<!--INICIO NAV-->
 	<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html">Grupo1</a>
+			<a class="navbar-brand" href="#">
+				<img src="assets/img/grupo1.jpg" width="70" alt="Te-lo-Vendo">
+			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
 				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -31,24 +34,21 @@
 			</div>
 		</div>
 	</nav>
+	<!--CIERRE NAV-->
 
+	<!--INICIO FORMULARIO-->
 	<div class="container-fluid d-flex justify-content-center">
 		<div class="container m-5 ">
-			<h1>Contáctanos</h1>
+			<h2>Contáctanos</h2><br>
 			<form id="formulario" action="index.html">
-				<!-- Usuario del form -->
 				<div class="mb-3">
 					<label for="nombre" class="form-label">Usuario</label>
 					<input type="text" class="form-control" id="nombre" placeholder="Introduzca su usuario">
 				</div>
-				<!-- Fin usuario -->
-
-				<!-- Correo form -->
 				<div class="mb-3">
 					<label for="correo" class="form-label">Correo</label>
 					<input type="email" class="form-control" id="correo" placeholder="correo@dominio.com">
 				</div>
-				<!-- Fin de correo form -->
 
 				<!-- Inicio de text-area -->
 				<div class="mb-3">
@@ -57,13 +57,14 @@
 				</div>
 				<!-- Fin de text-area -->
 
-				<!-- BOTÓN -->
+				<!-- BOTÓN ENVIAR -->
 				<input type="submit" value="Enviar" name="enviar">
 			</form>
+			<!--CIERRE FORMULARIO -->
 		</div>
 	</div>
 
-	<!-- Botón para volver al inicio-->
+	<!-- BOTON PARA VOLVER AL INICIO-->
 	<br>
 	<div class="container-fluid d-flex justify-content-center">
 		<div class="boton">
@@ -72,7 +73,7 @@
 		</div>
 	</div>
 
-	<!-- Modal -->
+	<!--INICIO  MODAL -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -103,14 +104,16 @@
 			</div>
 		</div>
 	</div>
-	<!-- Cierre de modal -->
+	<!--CIERRE MODAL -->
+
+	<!--JQUERY-->
 	<script src="assets/js/funciones.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
 		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/b-2.3.6/datatables.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-		crossorigin="anonymous"></script>
+		integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+	</script>
 	<script src="assets/js/jquery.fancybox.min.js"></script>
 	<script src="assets/js/tabla.js"></script>
 </body>
