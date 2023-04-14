@@ -1,5 +1,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,700&display=swap');
+#navbarNavAltMarkup{
+    background-color: #90acb4 !important;
 
+}
 .container{
     width: 50%;
 }
