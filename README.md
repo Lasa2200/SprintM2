@@ -1,4 +1,8 @@
-# Documentación Spint Final I
+# Documentación Sprint Final I
+
+## **Enlace externo**
+Esta documentación hace referencia al trabajo grupal sprint modulo 2. <br>
+Para ir al trabajo haz click  __[aquí](https://nodeca.github.io/pica/demo/)__
 
 ## **index.html**
 En esta seccion describiremos la composición y funcionamiento de nuestro index.html, él cuál está compuesto por una barra de navegación, un título `<h1>` más un subtítulo `<h2>`, prosigue con el `<main>`, que suma un texto explicativo sobre el negocio, una galería de imágenes y una tabla oculta para ser utilizada como modal y finaliza con un `<footer>` compuesto por los nombres de los integrantes del grupo, el nombre del negocio y el año actual.
@@ -8,7 +12,7 @@ En esta seccion describiremos la composición y funcionamiento de nuestro index.
 2. Se incluyó como `<nav>` en el ejercicio grupal 2, con 3 secciones (Pedidos / Seguimiento / Contacto). Las primeras dos opciones sólo aparecen sin llevar a ninguna dirección, mientras que la tercera sección *Contacto* está enlazado a `formulario.html`, un formulario de contacto para contactarse con *Te lo vendo*.
 3. Se le da estilo y responsividad durante el ejercicio 3 y 4, para que al navegar en celulares el menú se transforme en un menú desplegable, como un estilo hamburguesa.
 4. Se adiciona una sección inicio en el ejercicio 6, para volver a `index.html` desde cualquier página, junto a ello se suma un boton *estadisticas* que enlaza al producto del ejercicio 6, que es una tabla creada con Datatables. 
-5. Para el sprint final del modulo, se le da una funcionalidad que aparezca como modal al hacer click sobre aquella sección.
+5. Para el sprint final del modulo, se le da una funcionalidad que aparezca como modal al hacer click sobre aquella sección, junto a ello se elimina el titulo "grupo 1" para ser reeemplazado con una imagen que actua como logo.
 
 #### **Header**
 Es la sección con menos cambios durante el proyecto. 
@@ -56,7 +60,7 @@ El documento HTML se compone de las siguientes etiquetas y elementos:
 - `<input>`: Define un campo de entrada de texto para un elemento del formulario.
 - `<textarea>`: Define un área de texto para que los usuarios escriban su mensaje.
 - `<input type="submit" value="Enviar" name="enviar">`: Define un botón de envío que envía el formulario.
-- `<script>`: que vinculan archivos JavaScript a la página, estos archivos .
+- `<script>`: que vinculan archivos JavaScript a la página, estos archivos.
 
 #### **Dependencias externas**
 
@@ -66,7 +70,59 @@ Este archivo HTML depende de las siguientes bibliotecas externas:
 
 _______________________________________________________________
 
-## **tabla.JS**
+## **estadisticas.html**
+
+#### **Generalidades**
+
+Como se señaló anteriormente, en el ejercicio grupal 6, se solicitó la creación de una nueva hoja html con el nombre `estadisticas.html`. 
+Está incluye como elementos principales comunes de las otras paginas como el `<nav>` y el `<footer>`, se encuentra vinculada para los estilos visuales, mediante CDN, a Bootstrap. Junto a ello, posee las siguientes vinculaciones:
+- Hoja de estilos main.css que estila al proyecto completo.
+- tabla.js para ingresar los datos a la tabla HTML.
+
+
+#### **Particularidades**
+
+En el `<main>`, hay un `<table>` que se complemente con el archivo `tabla.js`. Este script contiene 6 columnas "id","fruta","$","categoria","color" y "medida", 11 filas con información que rellena la tabla, adicionalmente se incluye un buscador y permite mostrar 10, 25, 50 y 100 registros, junto a ello mostrarlo por paginas. Junto a ello permite ordenar los datos de forma númerica y alfabetica, gracias a flechas en el margen derecho de cada título.
+
+#### **Notas del Sprint final**
+
+Sin embargo, para el Sprint final del módulo 2, se decide desvincular esta página y se decide abrir mediante una tabla desde un modal.
+
+_______________________________________________________________
+
+## **funciones.js**
+
+El archivo `funciones.js` contiene la función creada para capturar y validar  visualmente la información ingresada en el formulario que está en el archivo de `contacto.html`. <br>
+La función llama al formulario y agrega los eventos que producen al presionar el evento `submit`, se crean variables para manejar cada uno de los `input`, comparamos la cantidad de caracteres de cada campo, sí este es 0, se asume que está vacío y aparece un aviso que se debe completar este campo. Esta validación se aplica a los 3 campos del formulario(usuario /correo / hablanos de tí). Sí todos los campos son validados se redirecciona a `index.html`
+​
+```
+formulario.addEventListener('submit', function (event) {    //generamos una accion al presionar el boton submit
+    event.preventDefault();                                 //prevenimos el evento por defecto, en este caso el 'submit'
+    let nombre = document.querySelector('#nombre').value    //creamos variables para manejar cada uno de los input     
+    let correo = document.querySelector('#correo').value
+    let sobreti = document.querySelector('#texto').value
+    if (nombre.length == 0) {                               //comparamos la cantidad de caracteres de cada campo
+        alert("Por favor rellene el campo del nombre");     //en caso de que sea 0, se asume que está vacío
+        document.querySelector('#nombre').focus();          //por ende se solicita que se rellene el campo faltante
+    }                                                       //asimismo llevamos el foco al campo vacío.
+    else if (correo.length == 0) {
+        alert("Por favor rellene el campo del correo");
+        document.querySelector('#correo').focus();
+    }
+    else if (sobreti.length == 0) {
+        alert("Por favor rellene sobre el 'Sobre tí'");
+        document.querySelector('#texto').focus();
+    }
+    else {
+        window.location.href = "http://127.0.0.1:5500/";    //en caso de pasar cada una de las condiciones, se reenvía al index
+                                                            // document.formulario.submit();
+    }
+});
+```
+
+_______________________________________________________________
+
+## **tabla.js**
 
 En el siguiente documento se especifica la funcionalidad del archivo `tabla.js`. Principalmente es usado para definir los datos de una tabla y posteriormente mostrarlos al ejecutarse desde el `Navbar` del sitio web de *TeLoVendo*.
 
