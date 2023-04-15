@@ -10,33 +10,72 @@ En esta seccion describiremos la composición y funcionamiento de nuestro index.
 4. Se adiciona una sección inicio en el ejercicio 6, para volver a `index.html` desde cualquier página, junto a ello se suma un boton *estadisticas* que enlaza al producto del ejercicio 6, que es una tabla creada con Datatables. 
 5. Para el sprint final del modulo, se le da una funcionalidad que aparezca como modal al hacer click sobre aquella sección.
 
-#### Header
+#### **Header**
 Es la sección con menos cambios durante el proyecto. 
 1. En el ejercicio 1 se crean sus componentes.
 2. Finalmente en el ejercicio 2 y 3 se le da estilo con CSS y Bootstrap.
 
-#### Main
+#### **Main**
 1. En el ejercicio 1 se genera la estructura HTML del documento con un `<p>` describiendo que es *¿Te lo vendo?*.
 2. Durante el ejercicio 2 se le da semantica, asignado a esta parte como la que posee el contenido principal del sitio, además de agregar divisores para las imagenes.
 3. Para la actividad 3 se le da responsividad a los textos y las imagenes, esto para que las fotos desplieguen una sobre otra en dispositivos móviles.
 4. Para el aprendizaje esperado 4 se agregan las funciones de bootstrap con el mismo objetivo.
 5. Durante el sprint para lograr el despliegue de un modal al hacer click en el boton *estadísticas*, se agrega una tabla de forma oculta, que permite la construcción del elemento requerido al ser solicitado por el cliente.
 
-#### Footer
+#### **Footer**
 1. Construcción basica del footer durante el ejercicio 1
 2. Se le da está definición semantica para el ejercicio 2
 3. Durante los ejercicios 3 y 4 se le da estilo con CCS y Bootstrap, sin recibir más modificaciones desde entonces.
 
+_______________________________________________________________
+
+## **contacto.html**
+
+Este archivo HTML representa la página de contacto de un sitio web. Contiene un formulario que permite a los usuarios enviar un mensaje con su nombre, correo y consulta a través de la página web.
+
+#### **Estructura del documento**
+
+El documento HTML se compone de las siguientes etiquetas y elementos:
+
+- `<!DOCTYPE html>`: Define el tipo de documento como HTML.
+- `<html lang="es">`: Define el idioma principal del documento como español.
+- `<head>`: Contiene información sobre el documento, como la codificación de caracteres, los metadatos y los enlaces a hojas de estilo y scripts.
+- `<meta>`: Proporciona información adicional sobre el documento, como la descripción y las palabras clave.
+- `<link>`: Especifica la ubicación de la hoja de estilo que se utilizará para el documento. Esta hoja permite que `<input>` se destaque al momento que el cliente se posiciona sobre él y se resalté en el instante que se está ingresando texto, esta misma función se utiliza para el momento de ingresar información en `<textarea>`.
+- `<title>`: Define el título de la página que se mostrará en la pestaña del navegador.
+- `<body>`: Contiene el contenido principal de la página.
+
+#### **Composición del `body`**
+
+- `<nav>`: Define una barra de navegación que permite a los usuarios acceder a diferentes secciones del sitio web.
+- `<div class="container-fluid d-flex justify-content-center">`: Define un contenedor flexible que centra el contenido horizontalmente.
+- `<div class="container m-5 ">`: Define un contenedor con un margen de 5 unidades.
+- `<form>`: Define un formulario de contacto que permite a los usuarios enviar un mensaje.
+- `<div class="mb-3">`: Define un grupo de elementos del formulario con un margen inferior de 3 unidades.
+- `<label>`: Define una etiqueta de texto para un elemento del formulario.
+- `<input>`: Define un campo de entrada de texto para un elemento del formulario.
+- `<textarea>`: Define un área de texto para que los usuarios escriban su mensaje.
+- `<input type="submit" value="Enviar" name="enviar">`: Define un botón de envío que envía el formulario.
+- `<script>`: que vinculan archivos JavaScript a la página, estos archivos .
+
+#### **Dependencias externas**
+
+Este archivo HTML depende de las siguientes bibliotecas externas:
+
+- Bootstrap 5.3.0-alpha2: se utiliza para aplicar estilos y clases a los elementos HTML.
+
+_______________________________________________________________
+
 ## **tabla.JS**
 
-En el seguimiento documento se especifica la funcionalidad del archivo `tabla.js`. Principalmente es usado para definir los datos de una tabla y posteriormente mostrarlos al ejecutarse desde el `Navbar` del sitio web de *TeLoVendo*.
+En el siguiente documento se especifica la funcionalidad del archivo `tabla.js`. Principalmente es usado para definir los datos de una tabla y posteriormente mostrarlos al ejecutarse desde el `Navbar` del sitio web de *TeLoVendo*.
 
 + _En este proyecto se trabajó con los framework de: `Bootstrap5` y  `Jquery 3.2.1`_
 
-
-**Block code "Array"**
+#### **Block code "Array"**
 
 Se especifica la `data` de cada uno de los productos dentro de la tabla, cada uno de los atributos correspondería a su _ID, nombre , valor , categoría, color_ y _medida_ del producto 
+
 ```
 var data = [
    { id: "1", nombre: "Pepino", valor: "1500", categoria: "Verdura", color: "Verde", medida: "kg" },
@@ -53,9 +92,7 @@ var data = [
 ]
 ```
 
-
-
-**Block code "función Datatable"**
+#### **Block code "función Datatable"**
 
 Se especifica la función para ejecutar la librería de `DataTable`
 
