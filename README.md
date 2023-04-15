@@ -1,11 +1,10 @@
 # Documentación Sprint Final I
-<<<<<<< HEAD
 
 ## **Enlace externo**
 Esta documentación hace referencia al trabajo grupal sprint modulo 2. <br>
 Para ir al trabajo haz click  __[aquí](https://nodeca.github.io/pica/demo/)__
-=======
->>>>>>> 948eb2b7a0dcd513e348857d552364d0ba39e0f2
+
+_______________________________________________________________
 
 ## **index.html**
 En esta seccion describiremos la composición y funcionamiento de nuestro index.html, él cuál está compuesto por una barra de navegación, un título `<h1>` más un subtítulo `<h2>`, prosigue con el `<main>`, que suma un texto explicativo sobre el negocio, una galería de imágenes y una tabla oculta para ser utilizada como modal y finaliza con un `<footer>` compuesto por los nombres de los integrantes del grupo, el nombre del negocio y el año actual.
