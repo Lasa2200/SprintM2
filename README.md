@@ -1,20 +1,20 @@
 # Documentación Sprint Final I
 
 ## **Enlace externo**
-Esta documentación hace referencia al trabajo grupal sprint modulo 2. <br>
+Esta documentación hace referencia al trabajo grupal sprint módulo 2. <br>
 Para ir al trabajo haz click  __[aquí](https://nodeca.github.io/pica/demo/)__
 
 _______________________________________________________________
 
 ## **index.html**
-En esta seccion describiremos la composición y funcionamiento de nuestro index.html, él cuál está compuesto por una barra de navegación, un título `<h1>` más un subtítulo `<h2>`, prosigue con el `<main>`, que suma un texto explicativo sobre el negocio, una galería de imágenes y una tabla oculta para ser utilizada como modal y finaliza con un `<footer>` compuesto por los nombres de los integrantes del grupo, el nombre del negocio y el año actual.
+En esta seccion describiremos la composición y funcionamiento de nuestro `index.html`, el cuál está compuesto por una barra de navegación, un título `<h1>` más un subtítulo `<h3>`, seguido con el `<main>`, que suma un texto explicativo sobre el negocio, una galería de imágenes y una tabla oculta para ser utilizada como modal, finaliza con un `<footer>` compuesto por los nombres de los integrantes del grupo, el nombre del negocio y el año actual.
 
 #### **Barra de navegación**
 1. Durante el grupal 1, se hace un listado con las secciones de esta barra.
-2. Se incluyó como `<nav>` en el ejercicio grupal 2, con 3 secciones (Pedidos / Seguimiento / Contacto). Las primeras dos opciones sólo aparecen sin llevar a ninguna dirección, mientras que la tercera sección *Contacto* está enlazado a `formulario.html`, un formulario de contacto para contactarse con *Te lo vendo*.
+2. Se incluyó como elemento `<nav>` en el ejercicio grupal 2, con 3 secciones (Pedidos / Seguimiento / Contacto). Las primeras dos opciones sólo aparecen sin llevar a ninguna dirección, mientras que la tercera sección *Contacto* está enlazado a `formulario.html`, un formulario para comunicarse con *Te lo vendo*.
 3. Se le da estilo y responsividad durante el ejercicio 3 y 4, para que al navegar en celulares el menú se transforme en un menú desplegable, como un estilo hamburguesa.
-4. Se adiciona una sección inicio en el ejercicio 6, para volver a `index.html` desde cualquier página, junto a ello se suma un boton *estadisticas* que enlaza al producto del ejercicio 6, que es una tabla creada con Datatables. 
-5. Para el sprint final del modulo, se le da una funcionalidad que aparezca como modal al hacer click sobre aquella sección, junto a ello se elimina el titulo "grupo 1" para ser reeemplazado con una imagen que actua como logo.
+4. Se adiciona una sección inicio en el ejercicio 6, para volver a `index.html` desde cualquier página, junto a ello se suma un boton *estadisticas* que enlaza al producto del ejercicio 6, esto es una tabla creada con Datatables. 
+5. Para el sprint final del módulo, se le da una funcionalidad que aparezca como modal al hacer clic sobre aquella sección, junto a ello se elimina el título "grupo 1" para ser reeemplazado con una imagen que actua como logo.
 
 #### **Header**
 Es la sección con menos cambios durante el proyecto. 
@@ -23,14 +23,14 @@ Es la sección con menos cambios durante el proyecto.
 
 #### **Main**
 1. En el ejercicio 1 se genera la estructura HTML del documento con un `<p>` describiendo que es *¿Te lo vendo?*.
-2. Durante el ejercicio 2 se le da semantica, asignado a esta parte como la que posee el contenido principal del sitio, además de agregar divisores para las imagenes.
-3. Para la actividad 3 se le da responsividad a los textos y las imagenes, esto para que las fotos desplieguen una sobre otra en dispositivos móviles.
-4. Para el aprendizaje esperado 4 se agregan las funciones de bootstrap con el mismo objetivo.
-5. Durante el sprint para lograr el despliegue de un modal al hacer click en el boton *estadísticas*, se agrega una tabla de forma oculta, que permite la construcción del elemento requerido al ser solicitado por el cliente.
+2. Durante el ejercicio 2 se le da semántica, asignando a esta parte como la que contiene las ideas principales del sitio, además de agregar divisores para las imágenes.
+3. Para la actividad 3 se le da responsividad a los textos y las imágenes, para que las fotos se muestren una sobre otra en dispositivos móviles.
+4. Para el aprendizaje esperado 4 se agregan las funciones de Bootstrap con el mismo objetivo.
+5. Durante el sprint para lograr el despliegue de un modal al hacer clic en el botón *estadísticas*, se agrega una tabla de forma oculta, que permite la construcción del elemento requerido al ser solicitado por el cliente.
 
 #### **Footer**
-1. Construcción basica del footer durante el ejercicio 1
-2. Se le da está definición semantica para el ejercicio 2
+1. Construcción basica del footer durante el ejercicio 1.
+2. Se le da está definición semantica para el ejercicio 2.
 3. Durante los ejercicios 3 y 4 se le da estilo con CCS y Bootstrap, sin recibir más modificaciones desde entonces.
 
 _______________________________________________________________
@@ -43,7 +43,7 @@ Este archivo HTML representa la página de contacto de un sitio web. Contiene un
 
 El documento HTML se compone de las siguientes etiquetas y elementos:
 
-- `<!DOCTYPE html>`: Define el tipo de documento como HTML.
+- `<!DOCTYPE html>`: Define el tipo de documento como HTML5.
 - `<html lang="es">`: Define el idioma principal del documento como español.
 - `<head>`: Contiene información sobre el documento, como la codificación de caracteres, los metadatos y los enlaces a hojas de estilo y scripts.
 - `<meta>`: Proporciona información adicional sobre el documento, como la descripción y las palabras clave.
@@ -92,10 +92,31 @@ Sin embargo, para el Sprint final del módulo 2, se decide desvincular esta pág
 
 _______________________________________________________________
 
+## **main.css**
+
+#### **Estilos para `container`**
+Se establece el ancho de la clase `container` al 50% para centrar el contenido del contenedor, mediante el atributo `width`.
+
+#### **Estilos para `h2` y `.lead`**
+Se centran los encabezados y la descripción utilizando `text-align`.
+
+#### **Estilos para `.container-imgs`**
+Se establece un ancho máximo al 50% y la altura ajustable de forma automática, para que las imágenes mantengan su relación de aspecto. También se utiliza `margin: 0 auto` para centrar el contenedor.
+
+#### **Estilos responsivos**
+
+- Media query para pantallas de hasta 768px (Tablet)
+Se ajusta el ancho máximo de `.parrafo-somos` y `.contenido`, mediante `max-width` al 100% para que se ajusten al ancho del dispositivo.
+
+- Media query para pantallas de hasta 515px (Móviles)
+Se ajustan los estilos de tablas para cuando se despliegan desde el navbar en pantallas pequeñas, cumpliendo con el concepto de responsividad. La tabla se reduce al 30% de su ancho original y se oculta el encabezado `(thead)`. Se establece un fondo gris claro `#f0f0f0` para las celdas de la primera columna `(tr td:first-child)` y se centra su contenido. El contenido de las celdas del cuerpo de la tabla se muestra centrado y se utiliza `data-th` para mostrar el encabezado de la columna en dispositivos móviles.
+
+_______________________________________________________________
+
 ## **funciones.js**
 
 El archivo `funciones.js` contiene la función creada para capturar y validar  visualmente la información ingresada en el formulario que está en el archivo de `contacto.html`. <br>
-La función llama al formulario y agrega los eventos que producen al presionar el evento `submit`, se crean variables para manejar cada uno de los `input`, comparamos la cantidad de caracteres de cada campo, sí este es 0, se asume que está vacío y aparece un aviso que se debe completar este campo. Esta validación se aplica a los 3 campos del formulario(usuario /correo / hablanos de tí). Sí todos los campos son validados se redirecciona a `index.html`
+La función llama al formulario y agrega los eventos que producen al presionar el evento `submit`, se crean variables para manejar cada uno de los `input`, comparamos la cantidad de caracteres de cada campo, sí este es 0, se asume que está vacío y aparece un aviso que se debe completar este campo. Esta validación se aplica a los 3 campos del formulario(usuario /correo / hablanos de tí). Sí todos los campos son validados se redirecciona a `index.html`.
 ​
 ```
 formulario.addEventListener('submit', function (event) {    //generamos una accion al presionar el boton submit
@@ -132,7 +153,7 @@ En el siguiente documento se especifica la funcionalidad del archivo `tabla.js`.
 
 #### **Block code "Array"**
 
-Se especifica la `data` de cada uno de los productos dentro de la tabla, cada uno de los atributos correspondería a su _ID, nombre , valor , categoría, color_ y _medida_ del producto 
+Se especifica la `data` de cada uno de los productos dentro de la tabla, cada uno de los atributos correspondería a su _ID, nombre, valor, categoría, color_ y _medida_ del producto.
 
 ```
 var data = [
@@ -152,7 +173,7 @@ var data = [
 
 #### **Block code "función Datatable"**
 
-Se especifica la función para ejecutar la librería de `DataTable`
+Se especifica la función para ejecutar la librería de `DataTable`:
 
 + Cuando el documento carga se ejecuta la función
 + Desde el documento se busca el id _#insertInfo_ para ejecutar las siguientes sentencias:
