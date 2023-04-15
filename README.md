@@ -1,8 +1,13 @@
-# Documentación Sprint Final I
+# Documentación Sprint Final II
 
 ## **Enlace externo**
+<<<<<<< HEAD
 Esta documentación hace referencia al trabajo grupal sprint módulo 2. <br>
 Para ir al trabajo haz click  __[aquí](https://nodeca.github.io/pica/demo/)__
+=======
+Esta documentación hace referencia al trabajo grupal sprint modulo 2. <br>
+Para ir al __repositorio__ haz click  __[aquí](https://nodeca.github.io/pica/demo/)__
+>>>>>>> 0cee5f840b4b6b4866134088691e40702b04a15f
 
 _______________________________________________________________
 
