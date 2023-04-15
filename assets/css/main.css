@@ -36,7 +36,8 @@ h4:hover {
     color: #a77f55;
 }
 
-@media screen and (max-width: 768) {
+/*  responsividad para el párrafo somos del index.html  */
+@media screen and (max-width: 768px) {
 .parrafo-somos {
     max-width: 100%;
 }
